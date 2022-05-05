@@ -29,12 +29,11 @@ class BasicTests(unittest.TestCase):
 
         self.assertEqual(status_code, 200)
 
-   def test_get_number(self):
-
-       status_code = urllib.request.urlopen("http://localhost:5000/getNumber").getcode()
 
 
-       self.assertEqual(status_code, 200)
+    def test_get_number(self):
+        status_code = urllib.request.urlopen("http://localhost:5000/getNumber").getcode()
+        self.assertEqual(status_code, 200)
 
 if __name__ == "__main__":
     unittest.main()
