@@ -22,14 +22,14 @@ class BasicTests(unittest.TestCase):
 
         self.assertEqual(status_code, 200)
 
-    def test_page2(self):
+    def test_page3(self):
 
         status_code = urllib.request.urlopen("http://localhost:5000/page3").getcode()
 
 
         self.assertEqual(status_code, 200)
 
-   def test_page2(self):
+   def test_page4(self):
 
        status_code = urllib.request.urlopen("http://localhost:5000/getNumber").getcode()
 
